@@ -1,0 +1,64 @@
+CREATE TABLE customer (
+    customer_ssn_id INT PRIMARY KEY,
+    customer_name VARCHAR(100) NOT NULL,
+    account_number BIGINT NOT NULL,
+    ifsc_code VARCHAR(20) NOT NULL,
+    account_balance BIGINT NOT NULL,
+    aadhar_number BIGINT NOT NULL UNIQUE,
+    pan_number VARCHAR(20) NOT NULL UNIQUE,
+    birth_date DATE NOT NULL,
+    gender VARCHAR(10) NOT NULL,
+    marital_status VARCHAR(20),
+    email VARCHAR(50) UNIQUE,
+    password VARCHAR(30) NOT NULL,
+    address VARCHAR(100) NOT NULL,
+    contact BIGINT NOT NULL,
+    updated_by INT,
+    created_by INT,
+    created_at DATE NOT NULL,
+    updated_at DATE
+);
+
+
+CREATE TABLE employee (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50),
+    email VARCHAR(30) UNIQUE NOT NULL,
+    password VARCHAR(30) NOT NULL,
+    address VARCHAR(100) NOT NULL,
+    contact BIGINT UNIQUE NOT NULL,
+    position VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE trans_info (
+    trans_id BIGINT PRIMARY KEY,
+    customer_ssn_id BIGINT NOT NULL,
+    to_customer_ssn_id BIGINT,    
+    amount BIGINT NOT NULL,    
+    trans_date DATE NOT NULL,
+    mode_of_trans VARCHAR(50) NOT NULL,
+    trans_type VARCHAR(50) NOT NULL
+);
+INSERT INTO customer (
+    customer_ssn_id, customer_name, account_number, ifsc_code, account_balance, 
+    aadhar_number, pan_number, birth_date, gender, marital_status, 
+    email, password, address, contact, updated_by, created_by, 
+    created_at, updated_at
+) 
+VALUES (
+    101, 'John Doe', 123456789012, 'TCSB0001234', 50000, 
+    123456789012, 'ABCDE1234F', '1985-02-15', 'Male', 'Single', 
+    'john.doe@example.com', 'password123', '123 Main St, Mumbai', 9876543210, 
+    NULL, 1, '2025-01-12', NULL
+);
+
+INSERT INTO employee (
+    employee_id, first_name, last_name, email, password, 
+    address, contact, position
+) 
+VALUES (
+    1, 'Jane', 'Smith', 'jane.smith@bankoftcs.com', 'securePass!123', 
+    '456 Elm St, Mumbai', 9876501234, 'Branch Manager'
+);
+

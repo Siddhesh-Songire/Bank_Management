@@ -1,0 +1,58 @@
+body {
+    background-image: url('../home.jpg');
+    backdrop-filter: blur(10px); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center;
+    color: white; 
+}
+
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    background-color: #C0C0C0;
+    transition: 0.2s ease;
+}
+
+.dropdown-menu {
+    background-color: transparent !important; /* Transparent background */
+    border: 1px solid white; /* White border */
+}
+
+/* Dropdown menu items */
+.dropdown-item {
+    color: white !important; /* White text */
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slight white overlay on hover */
+    color: white; /* White text */
+}
+
+/* Divider customization */
+.dropdown-divider {
+    border-color: white; /* White divider color */
+}
+.welcome-section {
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.btn-primary {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: black;
+}

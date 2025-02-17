@@ -1,0 +1,21 @@
+body {
+    background-image: url('home.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center;
+    color: white; 
+}
+
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    background-color: #C0C0C0;
+    transition: 0.2s ease;
+}

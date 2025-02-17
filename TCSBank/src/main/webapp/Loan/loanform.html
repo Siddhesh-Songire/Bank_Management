@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Loan Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="loanform.css" rel="stylesheet">
+  </head>
+  <body>
+
+
+    <section>
+      <nav class="navbar navbar-expand-lg nav_bar">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../Home/home.html"">
+              Bank Of Persia
+          </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle me-2" viewBox="0 0 16 16">
+                          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                        </svg>   Profile
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">My Profile</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                  </ul>
+
+              </ul>
+            </div>
+          </div>
+      </nav>
+  </section>
+
+  <section>
+      <div class="row">
+          <div class="col-3 sidebar">
+              <div id="home_side" class="row sidebar-item " onclick="loadpage('../Home/home.html')">
+                  Home
+              </div>
+              <hr>
+              <div id="customer_side" class="row sidebar-item" onclick="loadpage('../Customer/customer.html')" >
+                  Customer Management
+              </div>
+              <hr>
+              <div id="transaction_side" class="row sidebar-item" onclick="loadpage('../Transaction/transaction.html')">
+                  Transaction
+              </div>
+              <hr>
+              <div id="loan_side" class="row sidebar-item active" onclick="loadpage('loan.html')">
+                  Loan Management
+              </div>
+          </div>
+          <div class="col-9 main_content">
+            <div class="container mt-5">
+              <h2>Loan Form</h2>
+        
+              <form id="loanForm">
+                <div class="mb-3">
+                  <label for="ssnId" class="form-label">Customer SSN ID</label>
+                  <input type="text" class="form-control" id="ssnId" required>
+                </div>
+                <div class="mb-3">
+                  <label for="customerName" class="form-label">Customer Name</label>
+                  <input type="text" class="form-control" id="customerName" required>
+                </div>
+                <div class="mb-3">
+                  <label for="occupation" class="form-label">Occupation</label>
+                  <input type="text" class="form-control" id="occupation" required>
+                </div>
+                <div class="mb-3">
+                  <label for="employerName" class="form-label">Employer Name</label>
+                  <input type="text" class="form-control" id="employerName" required>
+                </div>
+                <div class="mb-3">
+                  <label for="loanAmount" class="form-label">Loan Amount</label>
+                  <input type="number" class="form-control" id="loanAmount" required>
+                </div>
+                <div class="mb-3">
+                  <label for="loanDuration" class="form-label">Loan Duration (Months)</label>
+                  <input type="number" class="form-control" id="loanDuration" required>
+                </div>
+                <div class="mb-3">
+                  <label for="contactNumber" class="form-label">Contact Number</label>
+                  <input type="text" class="form-control" id="contactNumber" pattern="\d{10}" required>
+                </div>
+                <button type="submit" class="btn btn-success">Save</button>
+              </form>
+            </div>
+          </div>
+      </div>
+  </section>
+
+
+    <script src="loanform.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

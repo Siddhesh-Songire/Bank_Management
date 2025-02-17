@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="customerhome.css" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <nav class="navbar navbar-expand-lg text-white ">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#">Bank Of TCS</a>
+        
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                      
+                    </ul>
+        
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle me-2" viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                                </svg>Profile
+                            </a>
+                            <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item " href="customerdetails.html">My Profile</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item " href="../index.html">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section text-center my-4">
+        <h1>Welcome, Customer!</h1>
+        <p>We are here to serve all your banking needs. Explore your account, transactions, and services tailored just for you.</p>
+    </section>
+
+    <!-- Quick Actions -->
+    <div class="container my-5">
+        <div class="row g-4">
+            
+            <div class="col-md-4">
+                <div class="card text-center text-white shadow bg-transparent border border-white">
+                    <div class="card-body">
+                        <h5 class="card-title">Transfer Funds</h5>
+                        <p class="card-text">Easily send money to your family and friends.</p>
+                        <a href="customertransfer.html" class="btn btn-primary">Transfer Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center text-white shadow bg-transparent border border-white">
+                    <div class="card-body">
+                        <h5 class="card-title">Transactions</h5>
+                        <p class="card-text">Track your recent transactions and history.</p>
+                        <a href="../Transaction/transaction.html" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center text-white shadow bg-transparent border border-white">
+                    <div class="card-body">
+                        <h5 class="card-title">Loan</h5>
+                        <p class="card-text">Check your account balance and details.</p>
+                        <a href="#" class="btn btn-primary">Apply</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center p-3">
+        © 2025 Bank Of TCS. All Rights Reserved.
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+body {
+    background-image: url('../home.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center;
+    color: white; 
+}
+
+.dropdown-menu {
+    background-color: transparent !important; /* Transparent background */
+    border: 1px solid white; /* White border */
+}
+
+/* Dropdown menu items */
+.dropdown-item {
+    color: white !important; /* White text */
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slight white overlay on hover */
+    color: white; /* White text */
+}
+
+/* Divider customization */
+.dropdown-divider {
+    border-color: white; /* White divider color */
+}
+
+.table-container {
+    border: 1px solid white; 
+    border-radius: 10px;
+    /* background: rgba(255, 255, 255, 0.2);  */
+    /* backdrop-filter: blur(10px); */
+    padding: 20px;
+}
+table {
+    color: white; /* White text for table content */
+    border: 1px solid white; /* White border for the table */
+}
+table thead {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background for table headers */
+    backdrop-filter: blur(10px); /* Blur effect for table headers */
+}
+table thead th {
+    color: white; /* White text for table headers */
+}
+table tbody tr {
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent background for rows */
+}   
+.pagination {
+    color: white;
+    padding: 10px;
+}
+.pagination .page-link {
+    border: 1px solid white;
+    color: white;
+}
+
+.page-item .page-link{
+    background: none; 
+    color: white;
+}
+.pagination .page-item.active .page-link {
+    background-color: white;
+    color: black;
+}
+
+.form-container {
+    border: 1px solid white;
+    border-radius: 10px;
+    /* background: rgba(255, 255, 255, 0.2);  */
+    backdrop-filter: blur(10px); 
+    padding: 30px;
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+.form-control {
+    background-color: transparent;
+    border: 1px solid white;  
+    color: white;
+    /* padding: 10px; */
+    border-radius: 4px;
+}
+.btn-primary {
+    background-color: transparent; 
+    color: white; 
+    border: 1px solid white;
+}
+.btn-primary:hover {
+    background-color: #f0f0f0; 
+    color: black;
+}
